@@ -18,21 +18,21 @@
   </head>
   <body class="body">
     <header class="page-header">
-      <div class="container header-container--flex">
-        <nav class="navigation">
+      <div class="container container--flex">
+        <nav class="page-header__nav">
           <a class="logo" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
           >
-          <ul class="menu-nav menu-nav--mleft">
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="./index.html">Студия </a>
-            </li>
+          <ul class="menu-nav page-header__menu-nav">
             <li class="menu-nav__item">
               <a
                 class="menu-nav__link menu-nav__link--activ"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
+                href="./index.html"
+                >Студия
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="">Контакты</a>
@@ -50,11 +50,7 @@
           </li>
           <li class="menu-connect__item">
             <a class="menu-connect__link" href="tel:+380961111111">
-              <svg
-                class="menu-connect__icon menu-connect__icon--mright"
-                width="16"
-                height="16"
-              >
+              <svg class="menu-connect__icon" width="16" height="16">
                 <use href="./images/icons.svg#tel"></use>
               </svg>
               +38 096 111 11 11
@@ -340,9 +336,11 @@
               ><span class="logo__web">Web</span>Studio</a
             >
             <address>
-              <p class="adr adr--margin">г. Киев, пр-т Леси Украинки, 26</p>
+              <p class="adr page-footer__adr">
+                г. Киев, пр-т Леси Украинки, 26
+              </p>
               <a
-                class="mail-tel mail-tel--mbottom"
+                class="mail-tel address__mail-tel"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               ><br />
@@ -350,7 +348,7 @@
             </address>
           </li>
           <li class="list-box__item">
-            <h2 class="join join--mbottom">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <h2 class="join page-footer__join">ПРИСОЕДИНЯЙТЕСЬ</h2>
             <ul class="soc soc--white">
               <li class="soc__item">
                 <a class="soc__link soc__link--bg" href="">

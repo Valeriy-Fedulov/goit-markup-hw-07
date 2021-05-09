@@ -83,7 +83,11 @@ h3 {
 }
 
 /* -------------------------------- Шапка */
-.header-container--flex {
+.page-header {
+  border-bottom: 1px solid var(--header-line);
+}
+
+.container--flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,12 +110,8 @@ h3 {
   color: var(--main-color);
 }
 
-.page-header {
-  border-bottom: 1px solid var(--header-line);
-}
-
 /* --------------------------------- Навигация */
-.navigation {
+.page-header__nav {
   display: flex;
   align-items: center;
 }
@@ -124,7 +124,7 @@ h3 {
   list-style: none;
 }
 
-.menu-nav--mleft {
+.page-header__menu-nav {
   margin-left: 93px;
 }
 
@@ -460,7 +460,7 @@ h3 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-tel--mbottom {
+.address__mail-tel {
   margin-bottom: 9px;
 }
 
@@ -474,7 +474,7 @@ h3 {
   color: var(--white-title-color);
 }
 
-.adr--margin {
+.page-footer__adr {
   margin-top: 0;
   margin-bottom: 9px;
 }
@@ -485,7 +485,7 @@ h3 {
   color: var(--white-title-color);
 }
 
-.join--mbottom {
+.page-footer__join {
   margin-bottom: 20px;
 }
 
