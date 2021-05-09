@@ -200,12 +200,10 @@ h3 {
 }
 
 .menu-connect__icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
-.menu-connect__icon--mright {
-  margin-right: 10px;
-}
 /* ---------------------------------------- Баннер */
 .hero {
   padding-top: 200px;
@@ -231,16 +229,14 @@ h3 {
 }
 
 .hero__title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-title-color);
-}
-
-.hero__title--mbottom {
-  margin-bottom: 30px;
 }
 
 .btn {
@@ -261,36 +257,26 @@ h3 {
 
 /* ----------------------------------- Особенности */
 .features {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.features__item {
   width: 270px;
 }
 
 .features__title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
 }
 
-.features__title--mbottom {
-  margin-bottom: 10px;
-}
-
 .features__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
   background-color: var(--features-background);
   border-radius: 4px;
-  padding: 25px 100px;
-}
-
-.features__icon--mbottom {
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /* --------------------------- Чем мы занимаемся */
@@ -352,6 +338,8 @@ h3 {
 }
 
 .team__name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -359,19 +347,13 @@ h3 {
   text-align: center;
 }
 
-.team__name--mbottom {
-  margin-bottom: 10px;
-}
-
 .team__prof {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
   text-align: center;
-}
-
-.team__prof--mbottom {
-  margin-bottom: 16px;
 }
 
 .soc {
@@ -416,14 +398,6 @@ h3 {
 /* ----------------------------- Постоянные клиенты */
 .clients {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.clients__link {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 92px;
@@ -436,8 +410,8 @@ h3 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients:hover,
+.clients:focus {
   border-color: var(--main-color);
 }
 
@@ -447,8 +421,8 @@ h3 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
+.clients:hover .clients__icon,
+.clients:focus .clients__icon {
   fill: var(--main-color);
 }
 
@@ -460,14 +434,7 @@ h3 {
   background-color: var(--bg-dark);
 }
 
-.footer {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer__item {
+.list-box__item {
   width: 270px;
 }
 
@@ -545,11 +512,11 @@ h3 {
 }
 
 /* ------------------------------------- Подписка */
-.subscribe {
+.list-box__item--grow {
   flex-grow: 1;
 }
 
-.subscribe__form {
+.subscribe {
   display: flex;
   align-items: flex-end;
 }
@@ -564,15 +531,12 @@ h3 {
 
 .subscribe__title {
   display: block;
+  margin-bottom: 20px;
 
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-title-color);
-}
-
-.subscribe__title--mbottom {
-  margin-bottom: 20px;
 }
 
 .subscribe__input {
@@ -652,15 +616,12 @@ h3 {
 }
 
 .modal__title {
+  margin-bottom: 11px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: var(--title-color);
-}
-
-.modal__title--mbottom {
-  margin-bottom: 11px;
 }
 
 .modal__list {
@@ -680,15 +641,12 @@ h3 {
   width: 100%;
   height: 40px;
   padding-left: 42px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 
   border: 1px solid var(--modal-inp);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__inp--margin {
-  margin-top: 4px;
-  margin-bottom: 10px;
 }
 
 .modal__icon {
@@ -713,6 +671,8 @@ h3 {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -722,11 +682,6 @@ h3 {
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__area--margin {
-  margin-top: 4px;
-  margin-bottom: 20px;
 }
 
 .modal__area::placeholder {
@@ -767,13 +722,10 @@ h3 {
   display: inline-block;
   width: 16px;
   height: 16px;
+  margin-right: 7px;
 
   border: 2px solid var(--title-color);
   border-radius: 2px;
-}
-
-.check__bord--mright {
-  margin-right: 7px;
 }
 
 .check__inp:checked ~ .check__bord {
@@ -861,60 +813,52 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: -15px;
   list-style: none;
 }
 
-.services--margin {
-  margin: -15px;
+.services__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.services__name {
+.product__name {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
 
-.services__name--mbottom {
-  margin-bottom: 4px;
-}
-
-.services__portf {
+.product__portf {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
 }
 
-.services__img {
+.product__img {
   display: block;
 }
 
-.services__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.services__item--margin {
-  margin: 15px;
-}
-
-.services__link {
+.product {
   text-decoration: none;
 }
 
-.services__link:hover .services__shadow,
-.services__link:focus .services__shadow {
+.product:hover .product__shadow,
+.product:focus .product__shadow {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.services__overley {
+.product__overley {
   position: relative;
   overflow: hidden;
 }
 
-.services__title {
+.product__title {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -938,12 +882,12 @@ h3 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.services__link:hover .services__title,
-.services__link:focus .services__title {
+.product:hover .product__title,
+.product:focus .product__title {
   transform: translateY(-100%);
 }
 
-.services__line {
+.product__line {
   padding: 20px 24px;
 
   border-left: 1px solid var(--services-line);
