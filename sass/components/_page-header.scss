@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid $header-line;
+}
+
+.container {
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
