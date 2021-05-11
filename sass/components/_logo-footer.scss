@@ -1,10 +1,9 @@
-.logo {
-  &--white {
-    margin-bottom: 20px;
+.logo--white {
+  margin-bottom: 20px;
 
-    color: $white-title-color;
-    &:focus {
-      @extend .logo--white;
-    }
+  color: $white-title-color;
+
+  &:focus {
+    @extend .logo--white;
   }
 }

@@ -12,8 +12,7 @@
 }
 
 .features__icon {
-  display: flex;
-  justify-content: center;
+  @include centered-flex();
   margin-bottom: 30px;
   background-color: $features-background;
   border-radius: 4px;

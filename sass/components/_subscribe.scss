@@ -1,12 +1,9 @@
-.list-box__item {
-  &--grow {
-    flex-grow: 1;
-  }
+.list-box__item--grow {
+  flex-grow: 1;
 }
 
 .subscribe {
-  display: flex;
-  align-items: flex-end;
+  @include centered-flex($align: flex-end);
 }
 .subscribe__email {
   display: flex;
@@ -40,9 +37,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: $mail-tel-color;
-}
 
-.subscribe__input {
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -54,12 +49,9 @@
   margin-left: 10px;
 }
 
-.btn {
-  &--right-icon {
-    display: flex;
-    align-items: center;
-    flex-basis: 200px;
-    margin-left: 12px;
-    padding: 10px 28px 10px 29px;
-  }
+.btn--right-icon {
+  @include centered-flex();
+  flex-basis: 200px;
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
 }

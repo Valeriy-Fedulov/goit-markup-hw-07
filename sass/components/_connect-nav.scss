@@ -1,8 +1,6 @@
 .menu-connect {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @extend %list-ul;
 }
 
 .menu-connect__item:not(:last-child) {
@@ -10,8 +8,7 @@
 }
 
 .menu-connect__link {
-  display: flex;
-  align-items: center;
+  @include centered-flex();
 
   font-weight: 500;
   line-height: 1.14;
@@ -20,9 +17,7 @@
   text-decoration: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.menu-connect__link {
   &:hover,
   &:focus {
     color: $main-color;

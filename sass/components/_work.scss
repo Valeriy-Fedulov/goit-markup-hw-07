@@ -1,8 +1,7 @@
-.section {
-  &--ptop {
-    padding-top: 0px;
-  }
+.section--ptop {
+  padding-top: 0px;
 }
+
 .work {
   position: relative;
 }
@@ -24,9 +23,7 @@
     rgba(47, 48, 58, 0.8)
   );
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered-flex();
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
